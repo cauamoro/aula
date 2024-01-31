@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body>
+
+    <%- include('../partials/header'); %>
+
+  <section class="content">
+    <h1>PROXIMOS JOGOS!!!</h1>
+    <h2><img src="/caua.png"></h2>
+
+    <% posts.forEach(post => { %>
+      <div class="post">
+        <h3><%= post.title %></h3>
+        <p><%= post.content %></p>
+      </div>
+    <% }); %>
+  </section>
+
+  <%- include('../partials/footer'); %>
+
+</body>
+</html>
